@@ -2,7 +2,7 @@
 
 ## 📝 Executive Summary
 
-While entering work one afternoon, I discovered that the main vestibule of a healthcare facility could be accessed using a common default keypad code: `1234`. The entrance typically requires a security guard to buzz in visitors or staff, or for authorized personnel to enter a code. However, the guard was temporarily away, and the keypad accepted a default PIN—granting full access into the facility without screening. This observation highlights significant risks in physical access control, default credentials, and reliance on human presence.
+While entering work one afternoon, I discovered that the main vestibule of a healthcare facility could be accessed using a common default keypad code: `1234`. The entrance typically requires a security guard to buzz in visitors or staff. However, the guard was temporarily away, and the keypad accepted a default PIN—granting full access into the facility without screening. This observation highlights significant risks in physical access control, default credentials, and reliance on human presence.
 
 ---
 
