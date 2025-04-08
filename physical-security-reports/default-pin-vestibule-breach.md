@@ -80,13 +80,13 @@ A malicious actor could easily exploit this situation by:
 - Attempting common default PINs during periods when the vestibule is unsupervised.
 - Gaining full interior access without screening, enabling lateral movement, data exposure, or physical threat to staff and patients.
 
-This configuration significantly weakens confidentiality, integrity, and availability within the facility—especially in a healthcare environment where regulatory compliance (e.g., HIPAA) is paramount.
+This configuration significantly weakens confidentiality, integrity, and availability within the facility; specially in a healthcare environment where regulatory compliance (e.g., HIPAA) is paramount.
 
 ---
 
 ## 🧠 Blue Team Reflection
 
-This situation illustrates a failure of layered defense. A keypad is only as strong as the code it's given—and human presence only works when it's present. Security must account for the gaps between people, tech, and process. Relying on either alone creates exploitable windows of opportunity.
+This situation illustrates a failure of layered defense. A keypad is only as strong as the code it's given, and human presence only works when it's present. Security must account for the gaps between people, tech, and process. Relying on either alone creates exploitable windows of opportunity.
 
 ---
 
