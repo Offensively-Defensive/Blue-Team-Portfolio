@@ -2,7 +2,7 @@
 
 ## 📝 Executive Summary
 
-While entering work one afternoon, I discovered that the main vestibule of a healthcare facility could be accessed using a common default keypad code: `1234`. The entrance typically requires a security guard to buzz in visitors or staff. However, the guard was temporarily away, and the keypad accepted a default PIN—granting full access into the facility without screening. This observation highlights significant risks in physical access control, default credentials, and reliance on human presence.
+While entering work one afternoon, I discovered that the main vestibule of a healthcare facility could be accessed using a common default keypad code: `1234`. The entrance typically requires a security guard to buzz in visitors or staff, or for authorized personnel to enter a code. However, the guard was temporarily away, and the keypad accepted a default PIN—granting full access into the facility without screening. This observation highlights significant risks in physical access control, default credentials, and reliance on human presence.
 
 ---
 
@@ -44,4 +44,52 @@ While entering work one afternoon, I discovered that the main vestibule of a hea
 | Risk | Severity | Notes |
 |------|----------|-------|
 | Use of default PIN for secure entry | High | Full facility access was possible without authorization |
-| Unattended security checkpoint | High | No
+| Unattended security checkpoint | High | No supervision or challenge during the time of access |
+| No lockout or delay on keypad entry | Medium | Multiple PIN attempts were allowed with no alert |
+| Vestibule design flaw | Medium | Public had unsupervised access to interior entry controls |
+
+---
+
+## ✅ Recommendations
+
+1. **Immediate PIN Change**
+   - Eliminate use of default or predictable PINs on any external or facility-critical access points.
+   - Replace with randomized codes and update regularly.
+
+2. **Harden Keypad Security**
+   - Add PIN attempt lockouts, timeouts, or alerting to discourage brute force.
+   - Consider removing keypad access entirely in favor of badge authentication.
+
+3. **Guard Desk Coverage Protocol**
+   - Ensure guard coverage is continuous, or designate secondary coverage during breaks.
+   - Post visible instructions when the desk is unattended to guide secure access procedures.
+
+4. **Physical Layout Improvements**
+   - Reconfigure vestibule access so security is between the entry point and internal doors, or implement turnstiles or other controlled barriers.
+
+5. **Audit & Awareness**
+   - Audit access logs to detect failed PIN attempts or suspicious entry patterns.
+   - Train security and staff on layered access control concepts and risks of default configurations.
+
+---
+
+## 👤 Adversarial Considerations
+
+A malicious actor could easily exploit this situation by:
+- Observing entry patterns and guard behavior to find opportune moments.
+- Attempting common default PINs during periods when the vestibule is unsupervised.
+- Gaining full interior access without screening, enabling lateral movement, data exposure, or physical threat to staff and patients.
+
+This configuration significantly weakens confidentiality, integrity, and availability within the facility—especially in a healthcare environment where regulatory compliance (e.g., HIPAA) is paramount.
+
+---
+
+## 🧠 Blue Team Reflection
+
+This situation illustrates a failure of layered defense. A keypad is only as strong as the code it's given—and human presence only works when it's present. Security must account for the gaps between people, tech, and process. Relying on either alone creates exploitable windows of opportunity.
+
+---
+
+## 🛑 Ethical Notice
+
+This observation was made during normal, authorized employee entry. No tools were used, no malicious access was attempted beyond the vestibule door, and no systems were compromised. This report is for educational and security awareness purposes only.
