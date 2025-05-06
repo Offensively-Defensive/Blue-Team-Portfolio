@@ -1,4 +1,5 @@
 I Almost Fell for a Bank Vishing Scam
+
 🧠 Background
 On a Sunday afternoon, I answered a phone call that appeared on Caller ID to be from my bank. What followed was a convincing, well-scripted vishing (voice phishing) attempt that almost got me to hand over my login credentials.
 
