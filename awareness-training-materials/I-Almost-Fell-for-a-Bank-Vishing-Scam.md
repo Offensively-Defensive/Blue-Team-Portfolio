@@ -1,9 +1,11 @@
 I Almost Fell for a Bank Vishing Scam
 
 🧠 Background
+
 On a Sunday afternoon, I answered a phone call that appeared on Caller ID to be from my bank. What followed was a convincing, well-scripted vishing (voice phishing) attempt that almost got me to hand over my login credentials.
 
 🧾 What Happened
+
 I typically screen unknown calls, but I answered this one because my bank’s name appeared on Caller ID. A man introduced himself as a representative from the fraud department, calling to verify a suspicious charge for $700 in Orlando, Florida. I confirmed the charge wasn’t mine.
 
 He then began listing real purchases I had made earlier that day, supposedly to “verify my transactions” and check for further fraud. That lowered my guard. Hearing the exact amount and vendor of my own purchases made him sound legitimate.
@@ -55,11 +57,13 @@ He said I’d lose ATM access and wouldn’t be able to use my card.
 Then came hold music that was clearly fake. Not my bank. I laughed for 30 seconds and hung up.
 
 🚨 Post-Incident Response
+
 Immediately, I changed the username I'd accidentally revealed. Then I called my bank directly to report the attempt. Cardholder services took my fraud report.
 
 The next day, I contacted member services and changed my password. I asked how the attacker had access to my actual transaction history. They weren’t sure, but we suspected a third-party app might be involved. I was advised to visit a branch for a new card and member number.
 
 🕵🏽‍♀️ Threat Model & Reflection
+
 This attack combined several techniques:
 
 Urgency: “Confirm now or your account will be locked.”
@@ -75,6 +79,7 @@ Intimidation: They threatened to freeze my account.
 Manipulation: Asked for my username and 2FA code under the guise of protection.
 
 🧠 Why I Fell for It (Almost)
+
 I let my guard down because the scammer:
 
 Knew real, recent transactions.
@@ -92,6 +97,7 @@ If reused across sites (as many people do), it can give attackers a major head s
 I now suspect they got my transaction data through a third-party financial app like Plaid, Dave, or CashApp; all of which have had breaches in the past.
 
 🔐 Future Prevention Steps
+
 Enable TOTP-based MFA (Time-Based One-Time Passwords) wherever possible.
 
 Reduce my digital footprint. Audit and unlink third-party financial apps.
@@ -103,6 +109,7 @@ Treat every unexpected “support” call with suspicion, even if it looks legit
 Keep security alerts enabled. They are often the first and only warning you’ll get.
 
 ❓ Self-Reflection Prompts
+
 Here are the questions I asked myself (and you should too):
 
 What specific moment should have made me hang up immediately?
@@ -116,4 +123,5 @@ What apps or services have access to my banking info, and how can I audit them?
 How can I make 2FA even more secure and less reliant on SMS?
 
 ✅ Final Thoughts
+
 You don’t have to outsmart scammers. You just have to slow down, listen to your instinct, and take back control of the conversation.
